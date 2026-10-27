@@ -106,8 +106,6 @@ CREATE TABLE Medicine (
     MedicineName VARCHAR(150) NOT NULL UNIQUE
 ) ;
 
-
-
 -- 10. PRESCRIPTION ITEM table
 CREATE TABLE PrescriptionItem (
     PrescriptionItemID VARCHAR(10) PRIMARY KEY,
@@ -133,8 +131,6 @@ CREATE TABLE PrescriptionItem (
     CONSTRAINT uq_prescription_medicine
         UNIQUE (PrescriptionID, MedicineID)
 ) ;
-
-
 
 -- 11. FOLLOW-UP PLAN table
 CREATE TABLE FollowUpPlan (
