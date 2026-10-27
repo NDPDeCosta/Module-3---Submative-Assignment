@@ -33,7 +33,6 @@ INSERT INTO Patient (PatientID, PatientName, Postcode) VALUES
 ('OP013', 'Grace Walker', 'EH12ST'),
 ('OP014', 'Harry White', 'G31UV');
 
-
 -- 3. Insert data to CLINICIAN table
 INSERT INTO Clinician
     (ClinicianID, ClinicianName, SpecialtyID)
@@ -52,7 +51,6 @@ VALUES
 ('C12', 'Dr Amelia Scott', 'S12'),
 ('C13', 'Dr Lucas Green', 'S13');
 
-
 -- 4. Insert data to CLINIC table
 INSERT INTO Clinic (ClinicID, ClinicName) VALUES
 ('CL01', 'City Road'),
@@ -68,7 +66,6 @@ INSERT INTO Clinic (ClinicID, ClinicName) VALUES
 ('CL11', 'Greenfield Eye Centre'),
 ('CL12', 'Lakeside Vision Clinic'),
 ('CL13', 'Hilltop Eye Centre');
-
 
 -- 5. Insert data to DIAGNOSIS table
 INSERT INTO Diagnosis (DiagnosisID, DiagnosisName) VALUES
@@ -86,7 +83,6 @@ INSERT INTO Diagnosis (DiagnosisID, DiagnosisName) VALUES
 ('D12', 'Refractive error'),
 ('D13', 'Corneal abrasion'),
 ('D14', 'Optic neuritis');
-
 
 -- 6. Insert data to MEDICINE table
 INSERT INTO Medicine (MedicineID, MedicineName) VALUES
@@ -177,8 +173,6 @@ INSERT INTO Prescription (PrescriptionID, AppointmentID) VALUES
 ('PR013', 'A014'),
 ('PR014', 'A015');
 
-
-
 -- 10. Insert data to PRESCRIPTION ITEM table
 INSERT INTO PrescriptionItem
     (PrescriptionItemID, PrescriptionID, MedicineID,
@@ -234,8 +228,7 @@ VALUES
 ('F014', 'A014', '1 week', '2026-11-19', 'Urgent', 'Planned'),
 ('F015', 'A015', '12 weeks', '2027-02-05', 'Routine', 'Scheduled');
 
-
--- VERIFY THE INSERTED DATA
+-- Verify the inserted data
 SELECT 'Patient' AS TableName, COUNT(*) AS TotalRecords
 FROM Patient
 UNION ALL
