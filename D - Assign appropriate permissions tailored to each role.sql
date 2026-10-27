@@ -6,7 +6,7 @@ CREATE ROLE IF NOT EXISTS 'Receptionist';
 CREATE ROLE IF NOT EXISTS 'Patient';
 
 -- ADMINISTRATOR PRIVILEGES
--- Full access to all six tables
+-- Full access to all tables
 GRANT SELECT, INSERT, UPDATE, DELETE
 ON EyeClinicDB.*
 TO 'Administrator';
